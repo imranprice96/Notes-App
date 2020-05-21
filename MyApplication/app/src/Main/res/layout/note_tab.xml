@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/note"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2pt"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/noteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/editButton"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_mode_edit_black_24dp" />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delete_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
